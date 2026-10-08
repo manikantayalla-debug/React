@@ -13,10 +13,10 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-      console.log(dayjs().format('MMMM D'));
+     const paragraph = <p>Today is {dayjs().format('MMMM D')}</p>;
 
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render();
+      ReactDOM.createRoot(container).render(paragraph);
     </script>
   </body>
 </html>
